@@ -1,41 +1,188 @@
-﻿//1. Imprimir 1-255.
+﻿int[] samples = { 2, 10, 3 };
+int[] sampleAllNegative = { -5, -2, -6 };
+int[] shiftingExample = { 1, 5, 10, 7, 2 };
+int[] sampleNumToString = { -1, 13, 2 };
 
-static void printNumbers()
-{   
-    //Print all of the integers from 1 to 255.
-    for(int i = 1; i <= 255; i++)
+// #1 Print 1-255
+static void PrintNumbers()
+{
+    int i = 1;
+    while (i < 256)
     {
         Console.WriteLine(i);
+        i++;
     }
 }
-printNumbers();
+PrintNumbers();
+Console.WriteLine("----");
 
-//2. Imprimir números impares entre 1-255.
-
-static void printOdds()
+// #2 Print odd numbers between 1-255
+static void PrintOdds()
 {
-    //Print all of the odd integers from 1 to 255.
-    for(int i = 1; i <=255; i++)
+    int i = 1;
+    while (i < 256)
     {
-        if(i%2 == 1)
-        {
-            Console.WriteLine(i);
-        }
+        Console.WriteLine(i);
+        i += 2;
     }
 }
-printOdds();
+PrintOdds();
+Console.WriteLine("----");
 
-//3. Imprimir Suma.
-
-static void printSum()
+// #3 Print all of the numbers from 0 to 255, but this time, also print the sum as you go 
+static void PrintSum()
 {
-    // Imprime todos los números del 0 al 255,
-    // pero esta vez, también imprime la suma sobre la marcha.
-    int resultaTemporal = 1;
-    for(int i = 0; i <=255; i++)
+    int i = 1;
+    int sum = 0;
+    while (i < 256)
     {
-        Console.WriteLine("Nuevo numero: "+ i + " Suma: " + resultaTemporal);
-        resultaTemporal += i;
+        sum += i;
+        Console.WriteLine($"New number:{i} Sum:{sum}");
+        i++;
     }
 }
-printSum();
+PrintSum();
+Console.WriteLine("----");
+
+// #4 Iterating Through an Array
+static void LoopArray(int[] numbers)
+{
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        Console.WriteLine(numbers[i]);
+    }
+}
+LoopArray(samples);
+Console.WriteLine("----");
+
+// #5 Find Max
+static int FindMax(int[] numbers)
+{
+    int max = numbers[0];
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (numbers[i] > max)
+            max = numbers[i];
+    }
+    return (max);
+}
+FindMax(sampleAllNegative);
+Console.WriteLine("----");
+
+// #6 Get Average
+static void GetAverage(int[] numbers)
+{
+    int sum = 0;
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        sum += numbers[i];
+    }
+    int avg = sum / numbers.Length;
+    Console.WriteLine(avg);
+}
+GetAverage(samples);
+Console.WriteLine("----");
+
+// #7 Array with Odd Numbers
+static int[] OddArray()
+{
+    int[] allOdds = new int[256 / 2];
+    for (int i = 1; i <= 255; i += 2)
+    {
+        allOdds[i / 2] = i;
+    }
+
+    return (allOdds);
+}
+OddArray();
+Console.WriteLine("----");
+
+// #8 Greater than Y
+static int GreaterThanY(int[] numbers, int y)
+{
+    int idxTally = 0;
+    foreach (int num in numbers)
+    {
+        if (num > y)
+            idxTally++;
+    }
+    return idxTally;
+}
+GreaterThanY(samples, 3);
+Console.WriteLine("----");
+
+// #9 Square the Values
+static void SquareArrayValues(int[] numbers)
+{
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        numbers[i] = numbers[i] * numbers[i];
+    }
+}
+SquareArrayValues(samples);
+SquareArrayValues(sampleAllNegative);
+Console.WriteLine("----");
+
+// #10 Eliminate Negative Numbers
+static void EliminateNegatives(int[] numbers)
+{
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (numbers[i] < 0)
+            numbers[i] = 0;
+        else
+            numbers[i] = numbers[i];
+    }
+}
+EliminateNegatives(sampleAllNegative);
+Console.WriteLine("----");
+
+// #11 Min, Max, and Average
+static void MinMaxAverage(int[] numbers)
+{
+    int max = numbers[0];
+    int min = numbers[0];
+
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (numbers[i] > max)
+            max = numbers[i];
+
+        if (numbers[i] < min)
+            min = numbers[i];
+    }
+
+    int avg = (min + max) / 2;
+}
+MinMaxAverage(samples);
+MinMaxAverage(sampleAllNegative);
+Console.WriteLine("----");
+
+// #12 Shifting the values in an array
+static void ShiftValues(int[] numbers)
+{
+    for (int i = 0; i < numbers.Length - 1; i++)
+    {
+        numbers[i] = numbers[i + 1];
+    }
+
+    numbers[numbers.Length - 1] = 0;
+}
+ShiftValues(shiftingExample);
+Console.WriteLine("----");
+
+// #13 Number to String
+static object[] NumToString(int[] numbers)
+{
+    object[] objects = new object[numbers.Length];
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (numbers[i] < 0)
+            objects[i] = "Dojo";
+        else
+            objects[i] = numbers[i];
+    }
+    return objects;
+}
+NumToString(sampleAllNegative);
+Console.WriteLine("----");
