@@ -1,0 +1,14 @@
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\bin\Debug\net7.0\Assignment_Fundamentals-II.exe
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\bin\Debug\net7.0\Assignment_Fundamentals-II.deps.json
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\bin\Debug\net7.0\Assignment_Fundamentals-II.runtimeconfig.json
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\bin\Debug\net7.0\Assignment_Fundamentals-II.dll
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\bin\Debug\net7.0\Assignment_Fundamentals-II.pdb
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\obj\Debug\net7.0\Assignment_Fundamentals-II.GeneratedMSBuildEditorConfig.editorconfig
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\obj\Debug\net7.0\Assignment_Fundamentals-II.AssemblyInfoInputs.cache
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\obj\Debug\net7.0\Assignment_Fundamentals-II.AssemblyInfo.cs
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\obj\Debug\net7.0\Assignment_Fundamentals-II.csproj.CoreCompileInputs.cache
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\obj\Debug\net7.0\Assignment_Fundamentals-II.dll
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\obj\Debug\net7.0\refint\Assignment_Fundamentals-II.dll
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\obj\Debug\net7.0\Assignment_Fundamentals-II.pdb
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\obj\Debug\net7.0\Assignment_Fundamentals-II.genruntimeconfig.cache
+D:\Aprendiendo a programar\2. C# .NET Coding Dojo\Assignment_Fundamentals-II\obj\Debug\net7.0\ref\Assignment_Fundamentals-II.dll
